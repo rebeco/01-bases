@@ -27,12 +27,7 @@ export class MainPageComponent implements OnInit {
     poder: 0,
   };
 
-  agregar() {
-    console.log(this.nuevo);
-    this.personajes.push(this.nuevo);
-    this.nuevo = {
-      nombre: '',
-      poder: 0,
-    };
+  agregarNuevoPersonaje(evento: Personaje) {
+    this.personajes.push(evento);
   }
 }
